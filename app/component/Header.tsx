@@ -70,16 +70,16 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden bg-black text-white mt-6">
             <div className="flex flex-col items-center p-5">
-              <Link href={""} className="font-medium py-2 hover:text-blue-600" onClick={toggleMenu}>
+              <Link href={""} className="font-medium pe-2 hover:text-blue-600" onClick={toggleMenu}>
                 HOME
               </Link>
-              <Link href={""} className="font-medium py-2 hover:text-blue-600" onClick={toggleMenu}>
+              <Link href={""} className="font-medium pe-2 hover:text-blue-600" onClick={toggleMenu}>
                 MENU
               </Link>
-              <Link href={""} className="font-medium py-2 hover:text-blue-600" onClick={toggleMenu}>
+              <Link href={""} className="font-medium pe-2 hover:text-blue-600" onClick={toggleMenu}>
                 MAKE A RESERVATION
               </Link>
-              <Link href={""} className="font-medium py-2 hover:text-blue-600" onClick={toggleMenu}>
+              <Link href={""} className="font-medium pe-2 hover:text-blue-600" onClick={toggleMenu}>
                 CONTACT
               </Link>
             </div>

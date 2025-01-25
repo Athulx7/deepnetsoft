@@ -19,8 +19,8 @@ export default function Drinks() {
             className="hidden md:flex"
           />
 
-          <div className="w-[100rem] border-2 border-white min-h-[50vh] rounded-sm m-6 mt-14">
-            <div className="flex items-ceter justify-between mt-5 ">
+          <div className="w-[100rem] border-2 border-white min-h-[50vh] rounded-sm m-4 mt-14">
+            <div className="flex flex-row items-center justify-between mt-5 ">
               <div className="md:-mt-40 md:-ms-12 -mt-7 ">
                 <img src="/dnsJuice.png" width={200} alt="" />
               </div>
@@ -28,7 +28,7 @@ export default function Drinks() {
               <div className="flex items-center justify-center">
                 <div className="bg-gray-600 w-[4rem] h-1"> </div>
                 <div className="mx-10 md:text-5xl text-xl font-bold text-center">
-                  DRINK
+                  DRINKS
                 </div>
                 <div className="bg-gray-600 w-[4rem] h-1"> </div>
               </div>
@@ -55,7 +55,7 @@ export default function Drinks() {
                 <h1>CINNAMON TOAST CRUNCH..........................$16</h1>
                 <p className="text-gray-600">
                   Skrewball peanut butter whiskey, vanilla extract, Amaretto,
-                  Baileys, egg white, cinnamon
+                  Baileys, egg white, cinnamondfdsgfdgdfgdrgdfgfdgfdgdf
                 </p>
               </div>
               <div className="w-full sm:w-1/2 md:w-1/2 mb-4 md:mb-0">
@@ -72,8 +72,6 @@ export default function Drinks() {
                   Baileys, egg white, cinnamon
                 </p>
               </div>
-
-              
             </div>
 
             <div className="flex items-end justify-end">
