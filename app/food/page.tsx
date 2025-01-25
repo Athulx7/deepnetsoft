@@ -24,13 +24,14 @@ export default function Food() {
   return (
     <>
       <div
-        className="relative w-full h-[100vh] flex items-center justify-center"
+        className="relative w-full min-h-screen flex items-center justify-center"
         style={{
           backgroundImage: "url('/dnsDrink.png')",
           backgroundSize: "cover",
+          backgroundPosition:'center'
         }}
       >
-        <div className="flex items-center justify-between text-white  bg-black/80 w-full h-[100vh]">
+        <div className="flex items-center justify-between text-white  bg-black/80 w-full min-h-screen">
           <Image
             src={"/dnsSide.png"}
             width={160}
