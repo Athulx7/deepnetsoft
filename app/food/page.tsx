@@ -77,7 +77,7 @@ export default function Food() {
                     <div className="flex items-end justify-end">
                       <img
                         src="/dnsCocktail.png"
-                        className="-mt-44 w-24 md:w-52"
+                        className="-mt-42 w-24 md:w-52"
                         alt=""
                       />
                     </div>

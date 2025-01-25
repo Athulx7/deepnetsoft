@@ -77,7 +77,7 @@ export default function Drinks() {
             <div className="flex items-end justify-end">
               <img
                 src="/dnsCocktail.png"
-                className="-mt-44 w-24 md:w-52"
+                className="-mt-28 w-24 me-6 md:me-0 md:w-52"
                 alt=""
               />
             </div>
