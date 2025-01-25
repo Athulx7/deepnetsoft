@@ -41,7 +41,7 @@ export default function Drinks() {
             className="hidden md:flex"
           />
 
-          <div className=" md:w-[100rem] w-[340px] border-2 border-white min-h-[50vh] rounded-sm m-4 mt-14">
+          <div className=" md:w-[100rem] w-[33rem] border-2 border-white min-h-[50vh] rounded-sm m-4 mt-14">
             <div className="flex flex-row items-center justify-between mt-5 ">
               <div className="md:-mt-40 md:-ms-12 -mt-7 ">
                 <img src="/dnsJuice.png" width={200} alt="" />
