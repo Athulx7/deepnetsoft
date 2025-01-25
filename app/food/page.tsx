@@ -1,6 +1,26 @@
+"use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { getFoodingData } from "../services/api";
 
+type Food = {
+  name: string;
+  description: string;
+  price: string;
+  category: string;
+};
 export default function Food() {
+  const [foodData, setfoodData] = useState<Food[]>([]);
+
+  const fetchData = async () => {
+    const responce = await getFoodingData();
+    setfoodData(responce?.data || []);
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <>
       <div
@@ -37,41 +57,15 @@ export default function Food() {
             </div>
 
             <div className="p-10 flex flex-wrap justify-between items-center">
-              <div className="w-full sm:w-1/2 md:w-1/2 mb-4 md:mb-0">
-                <h1>CINNAMON TOAST CRUNCH..........................$16</h1>
-                <p className="text-gray-600">
-                  Skrewball peanut butter whiskey, vanilla extract, Amaretto,
-                  Baileys, egg white, cinnamon
-                </p>
-              </div>
-              <div className="w-full sm:w-1/2 md:w-1/2 mb-4 md:mb-0">
-                <h1>CINNAMON TOAST CRUNCH..........................$16</h1>
-                <p className="text-gray-600">
-                  Skrewball peanut butter whiskey, vanilla extract, Amaretto,
-                  Baileys, egg white, cinnamon
-                </p>
-              </div>
-              <div className="w-full sm:w-1/2 md:w-1/2 mb-4 md:mb-0">
-                <h1>CINNAMON TOAST CRUNCH..........................$16</h1>
-                <p className="text-gray-600">
-                  Skrewball peanut butter whiskey, vanilla extract, Amaretto,
-                  Baileys, egg white, cinnamondfdsgfdgdfgdrgdfgfdgfdgdf
-                </p>
-              </div>
-              <div className="w-full sm:w-1/2 md:w-1/2 mb-4 md:mb-0">
-                <h1>CINNAMON TOAST CRUNCH..........................$16</h1>
-                <p className="text-gray-600">
-                  Skrewball peanut butter whiskey, vanilla extract, Amaretto,
-                  Baileys, egg white, cinnamon
-                </p>
-              </div>
-              <div className="w-full sm:w-1/2 md:w-1/2 mb-4 md:mb-0">
-                <h1>CINNAMON TOAST CRUNCH..........................$16</h1>
-                <p className="text-gray-600">
-                  Skrewball peanut butter whiskey, vanilla extract, Amaretto,
-                  Baileys, egg white, cinnamon
-                </p>
-              </div>
+              {foodData.map((food,index) => (
+                <div key={index} className="w-full sm:w-1/2 md:w-1/2 mt-5 mb-4 md:mb-0">
+                  <h1>
+                    {food.name.toUpperCase()}..........................$
+                    {food.price}
+                  </h1>
+                  <p className="text-gray-600">{food.description}</p>
+                </div>
+              ))}
             </div>
 
             <div className="flex items-end justify-end">
