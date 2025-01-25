@@ -1,14 +1,14 @@
-"use client"
-
-import { useState } from "react";
 import Drinks from "../drinks/page";
 import Food from "../food/page";
 import Brunch from "../brunch/page";
 
-export default function SubMenu() {
-    const [selectedPage, setSelectedPage] = useState('drinks');
-    const handleClick = (page:string) => {
-        setSelectedPage(page); 
+interface SubMenuProps {
+    selectedPage: string;
+    onPageChange: (page: string) => void;
+  }
+export default function SubMenu({ selectedPage, onPageChange }: SubMenuProps) {
+    const handleClick = (page: string) => {
+        onPageChange(page); 
       };
   return (
     <>

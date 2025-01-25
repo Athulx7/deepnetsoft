@@ -42,7 +42,7 @@ export default function Header() {
             <Link href={""} className="text-white font-medium ms-10 hover:text-blue-600">
               HOME
             </Link>
-            <Link href={""} className="text-white font-medium ms-10 hover:text-blue-600">
+            <Link href={""} className="text-blue-600 font-medium ms-10 hover:text-blue-600">
               MENU
             </Link>
             <Link href={""} className="text-white font-medium ms-10 hover:text-blue-600">
@@ -73,7 +73,7 @@ export default function Header() {
               <Link href={""} className="font-medium pe-2 hover:text-blue-600" onClick={toggleMenu}>
                 HOME
               </Link>
-              <Link href={""} className="font-medium pe-2 hover:text-blue-600" onClick={toggleMenu}>
+              <Link href={""} className="font-medium pe-2 text-blue-600 " onClick={toggleMenu}>
                 MENU
               </Link>
               <Link href={""} className="font-medium pe-2 hover:text-blue-600" onClick={toggleMenu}>

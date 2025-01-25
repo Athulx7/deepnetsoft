@@ -1,9 +1,9 @@
-import MainMainHome from "./component/MainMainHome";
+import MainHome from "./component/MainHome";
 
 export default function Home() {
   return (
     <>
-   <MainMainHome />
+   <MainHome />
     </>
   );
 }
