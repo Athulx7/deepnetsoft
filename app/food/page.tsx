@@ -24,14 +24,14 @@ export default function Food() {
   return (
     <>
       <div
-        className="relative w-full min-h-screen flex items-center justify-center"
+        className="relative w-full min-h-screen flex items-center justify-center "
         style={{
           backgroundImage: "url('/dnsDrink.png')",
           backgroundSize: "cover",
           backgroundPosition:'center'
         }}
       >
-        <div className="flex items-center justify-between text-white  bg-black/80 w-full min-h-screen">
+        <div className="flex items-center justify-between text-white  bg-black/80 w-full min-h-screen ">
           <Image
             src={"/dnsSide.png"}
             width={160}
@@ -40,7 +40,7 @@ export default function Food() {
             className="hidden md:flex"
           />
 
-          <div className="w-[100rem] border-2 border-white min-h-[50vh] rounded-sm m-4 mt-14">
+          <div className="md:w-[100rem] w-[340px] border-2 border-white min-h-[50vh] rounded-sm m-4 mt-14">
             <div className="flex flex-row items-center justify-between mt-5 ">
               <div className="md:-mt-40 md:-ms-12 -mt-7 ">
                 <img src="/dnsJuice.png" width={200} alt="" />
