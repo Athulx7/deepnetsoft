@@ -7,7 +7,7 @@ import Brunch from "../brunch/page";
 
 export default function SubMenu() {
     const [selectedPage, setSelectedPage] = useState('drinks');
-    const handleClick = (page:any) => {
+    const handleClick = (page:string) => {
         setSelectedPage(page); 
       };
   return (
