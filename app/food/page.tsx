@@ -54,7 +54,7 @@ export default function Food() {
                 <div className="bg-gray-600 w-[4rem] h-1"> </div>
               </div>
 
-              <div className="md:w-40 w-32"></div>
+              <div className="md:w-40 w-24"></div>
             </div>
 
             <div className="p-10 flex flex-wrap justify-between items-center">
